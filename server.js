@@ -21,7 +21,7 @@ const app = express();
 const PORT = process.env.PORT || 3002;
 
 const sess = {
-    secret: 'sessionSecret',
+    secret: 'asd6g5f4a6sd512ga6sd5g1v6sa5hjjghd65g',
     cookie: {
     // specifies how long a cookie should remain valid
     maxAge: 3600,

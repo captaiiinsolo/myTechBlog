@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Post, Comment } = require('../models');
 
+// Get all posts
 router.get('/', async (req, res) => {
     try {
         const techBlogData = await Post.findAll({
@@ -25,3 +26,11 @@ router.get('/', async (req, res) => {
         res.status(500).json(err);
     }
 });
+
+// Get post by ID
+
+// Create New Post
+
+// Update post
+
+// Delete post
