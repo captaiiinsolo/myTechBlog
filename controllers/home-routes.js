@@ -34,3 +34,5 @@ router.get('/', async (req, res) => {
 // Update post
 
 // Delete post
+
+module.exports = router;
