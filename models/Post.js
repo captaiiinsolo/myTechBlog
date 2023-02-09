@@ -12,14 +12,6 @@ Post.init(
       autoIncrement: true,
     },
 
-    user_username: {
-      type: DataTypes.STRING,
-      references: {
-        model: 'user',
-        key: 'username',
-      },
-    },
-
     title: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -39,6 +31,14 @@ Post.init(
       allowNull: false,
       validate: {
         notEmpty: true,
+      },
+    },
+
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
       },
     },
   },

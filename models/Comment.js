@@ -12,14 +12,6 @@ Comment.init(
       primaryKey: true,
     },
 
-    user_username: {
-      type: DataTypes.STRING,
-      references: {
-        model: 'user',
-        key: 'username',
-      },
-    },
-
     contents: {
       type: DataTypes.TEXT,
       allowNull: false,
@@ -32,6 +24,14 @@ Comment.init(
       type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW,
+    },
+
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
     },
   },
 
