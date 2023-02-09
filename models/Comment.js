@@ -12,6 +12,14 @@ Comment.init(
       primaryKey: true,
     },
 
+    user_username: {
+      type: DataTypes.STRING,
+      references: {
+        model: 'user',
+        key: 'username',
+      },
+    },
+
     contents: {
       type: DataTypes.TEXT,
       allowNull: false,
