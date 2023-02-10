@@ -1,62 +1,90 @@
 <div class="columns is-centered mt-6 pt-6">
-    <div class="column is-one-quarter">
-        <div class="card p-4">
-            <p class="title">Login</p>
+  <div class="column is-one-quarter">
+    <div class="card p-4">
+      <p class="title">Login</p>
 
-            <form id="login-form">
-                <div class="field">
-                <label for="username-login" class="label">Username:</label>
-                <div class="control">
-                    <input id="username-login" class="input" type="text" placeholder="username">
-                </div>
-            </div>
-
-            <div class="field">
-                <label for="password-login" class="label">Password:</label>
-                <div class="control">
-                    <input id="password-login" class="input" type="text" placeholder="password">
-                </div>
-            </div>
-
-            <div class="field">
-                <div class="control mt-5">
-                    <input type="submit" class="button is-info" value="Login">
-                </div>
-            </div>
-            </form>
+      <form id="login-form">
+        <div class="field">
+          <label for="username-login" class="label">Username:</label>
+          <div class="control">
+            <input
+              id="username-login"
+              class="input"
+              type="text"
+              placeholder="username"
+            />
+          </div>
         </div>
-    </div>
 
-    <div class="column is-one-quarter">
-        <div class="card p-4">
-            <p class="title">Sign Up</p>
-
-             <div class="field">
-                <label for="username-signup" class="label">Username:</label>
-                <div class="control">
-                    <input class="input" type="text" placeholder="username">
-                </div>
-            </div>
-
-            <div class="field">
-                <label for="email-signup" class="lavel">Email</label>
-                <div class="control">
-                    <input class="input" type="text" placeholder="email">
-                </div>
-            </div>
-
-            <div class="field">
-                <label for="password-signup" class="label">Password:</label>
-                <div class="control">
-                    <input class="input" type="text" placeholder="password">
-                </div>
-
-                <div class="control mt-5">
-                    <button class="button is-info">Sign Up</button>
-                </div>
-            </div>
+        <div class="field">
+          <label for="password-login" class="label">Password:</label>
+          <div class="control">
+            <input
+              id="password-login"
+              class="input"
+              type="text"
+              placeholder="password"
+            />
+          </div>
         </div>
+
+        <div class="field">
+          <div class="control mt-5">
+            <input type="submit" class="button is-info" value="Login" />
+          </div>
+        </div>
+      </form>
     </div>
+  </div>
+
+  <div class="column is-one-quarter">
+    <div class="card p-4">
+      <p class="title">Sign Up</p>
+
+      <form id="signup-form">
+        <div class="field">
+          <label for="username-signup" class="label">Username:</label>
+          <div class="control">
+            <input
+              id="username-signup"
+              class="input"
+              type="text"
+              placeholder="username"
+            />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="email-signup" class="lavel">Email</label>
+          <div class="control">
+            <input
+              id="email-signup"
+              class="input"
+              type="text"
+              placeholder="email"
+            />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="password-signup" class="label">Password:</label>
+          <div class="control">
+            <input
+              id="password-signup"
+              class="input"
+              type="text"
+              placeholder="password"
+            />
+          </div>
+
+          <div class="control mt-5">
+            <input type="submit" class="button is-success" value="Sign Up!" />
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
 </div>
 
 <script src="./js/login.js"></script>
