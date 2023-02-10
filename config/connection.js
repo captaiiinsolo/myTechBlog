@@ -5,7 +5,9 @@ const Sequelize = require('sequelize');
 require('dotenv').config();
 
 // Creeates new instance of Sequelize and passes envirnmental variables
-const sequelize = new Sequelize(
+const sequelize = process.env.JAWSDB_URL ?
+    new Sequelize(process.env.JAWSDB_URL) :
+    new Sequelize (
     process.env.DB_NAME,
     process.env.DB_USER,
     process.env.DB_PASSWORD,
